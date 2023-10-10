@@ -94,7 +94,7 @@ const Home = () => {
     <section className="timer-count">
       <Container>
         <Row>
-          <Col lg='6' md='6'>
+          <Col lg='6' md='12' className='count-down-col'>
             <div className="clock-top-content">
               <h4 className='text-white fs-6 mb-2'>Limited Offers</h4>
               <h3 className='text-white fs-5 mb-3'>Quality Armchairs</h3>
@@ -102,7 +102,7 @@ const Home = () => {
             <Clock />
             <motion.button whileHover={{scale: 1.1}} className="buy-btn store-btn"><Link to='/shop'>Visit Shop</Link></motion.button>
           </Col>
-          <Col lg='6' md='6' className='text-end'>
+          <Col lg='6' md='12' className='text-end counter-img'>
             <img src={counterImg} alt="" />
           </Col>
         </Row>
